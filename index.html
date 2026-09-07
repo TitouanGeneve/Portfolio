@@ -3,9 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Titouan Genève | Portfolio BTS SIO SLAM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">TG<span>.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>Titouan Genève</span></h1>
+            <h2>Étudiant en BTS SIO option SLAM</h2>
+            <p>Passionné par la programmation, la cybersécurité et le développement web. À la recherche d'un stage dans le domaine du numérique.</p>
+            <div class="hero-info">
+                <span><i class="fa-solid fa-location-dot"></i> Annonay (07)</span>
+                <span><i class="fa-solid fa-car"></i> Permis B + Véhicule</span>
+                <span><i class="fa-solid fa-cake-candles"></i> 18 ans</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Me contacter</a>
+                <a href="#projets" class="btn secondary">Voir mes projets</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- À propos -->
+    <section id="about" class="section">
+        <h2 class="title">À propos de moi</h2>
+        <div class="about-container">
+            <p>
+                Titulaire d'un <strong>Baccalauréat Général (spécialités NSI & SI)</strong> obtenu avec mention Assez Bien, je poursuis actuellement mes études en <strong>BTS SIO (Services Informatiques aux Organisations)</strong>, option SLAM au Pôle supérieur Saint-Denis à Annonay.
+            </p>
+            <p>
+                Curieux et rigoureux, j'aime comprendre le fonctionnement sous-jacent des systèmes, concevoir des algorithmes et relever des défis techniques comme l'organisation de CTF (Capture The Flag).
+            </p>
+            <div class="languages">
+                <h3><i class="fa-solid fa-language"></i> Langues :</h3>
+                <ul>
+                    <li><strong>Anglais :</strong> Niveau B2+</li>
+                    <li><strong>Espagnol :</strong> Niveau B1</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section bg-alt">
+        <h2 class="title">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Développement Web</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Programmation</h3>
+                <p>Python (avancé), notions en Lua, C++, C#</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Données & Systèmes</h3>
+                <p>Notions en SQL, bases de données, algorithmique</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Réseaux & Gestion</h3>
+                <p>Configuration réseau de base, gestion de projet, architecture informatique</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section">
+        <h2 class="title">Projets Réalisés</h2>
+        <div class="projects-grid">
+            
+            <!-- Projet CTF -->
+            <div class="project-card highlight">
+                <div class="project-tags">
+                    <span>Cybersécurité</span>
+                    <span>Web</span>
+                    <span>Python</span>
+                </div>
+                <h3>Création d'un CTF (Capture The Flag)</h3>
+                <p class="project-date">2025 - Lycée Saint-Denis</p>
+                <p>Conception et organisation complète d'une compétition informatique au sein du lycée.</p>
+                <ul>
+                    <li>Épreuves de sécurité Web & Cryptographie</li>
+                    <li>Challenges de Programmation & OSINT</li>
+                    <li>Gestion des participants et des scores</li>
+                </ul>
+            </div>
+
+            <!-- Projet BTS SLAM à venir -->
+            <div class="project-card">
+                <div class="project-tags">
+                    <span>BTS SIO</span>
+                    <span>SLAM</span>
+                </div>
+                <h3>Projets d'Épreuve E4 (En cours)</h3>
+                <p class="project-date">2026 - Pôle Supérieur Saint-Denis</p>
+                <p>Développement d'applications et gestion de bases de données dans le cadre de la formation BTS SIO.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Expériences -->
+    <section id="experiences" class="section bg-alt">
+        <h2 class="title">Expériences Professionnelles</h2>
+        <div class="timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-date">6 mois</div>
+                <div class="timeline-content">
+                    <h3>Ouvrier Agricole - Récolte de Spiruline</h3>
+                    <h4>Spiruline du Dauphiné | Moissieu-sur-Dolon</h4>
+                    <p>Méthodes et normes de qualité, conditionnement, nettoyage et entretien des équipements de production.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2 mois</div>
+                <div class="timeline-content">
+                    <h3>Ouvrier Agricole - Récolte du Tabac</h3>
+                    <h4>GAEC Les Deux Chênes | Lapeyrouse-Mornay</h4>
+                    <p>Récolte en plein champ selon la maturité, tri, sélection et conditionnement des feuilles.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="title">Me Contacter</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>titouan.geneve1305@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>06 36 05 81 66</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Avenue de la Gare, 07100 Annonay</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <input type="text" placeholder="Sujet" required>
+                <textarea rows="5" placeholder="Votre Message" required></textarea>
+                <button type="submit" class="btn primary">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Titouan Genève - BTS SIO SLAM. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
