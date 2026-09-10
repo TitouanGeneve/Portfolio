@@ -17,6 +17,7 @@
             <li><a href="#about">À propos</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#projets">Projets</a></li>
+            <li><a href="#photographie">Photographie</a></li>
             <li><a href="#experiences">Expériences</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -128,6 +129,49 @@
         </div>
     </section>
 
+    <!-- Photographie -->
+    <section id="photographie" class="section bg-alt">
+        <h2 class="title">Photographie</h2>
+        <p class="section-intro">
+            <!-- Remplacez ce texte par une présentation de votre pratique photographique. -->
+            Une sélection de photographies réalisées au fil de mes découvertes et de mes projets personnels.
+        </p>
+        <div class="photography-grid">
+            <figure class="photo-card">
+                <img src="images/20240606_202550.jpg" alt="Photographie personnelle 1">
+                <figcaption>Photographie de la ville d'Annonay pendant un orage</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/20240813_165351.jpg" alt="Photographie personnelle 2">
+                <figcaption>Photographie d'un papillon zygène posé sur une fleur de carline blanche</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/20241227_152258.jpg" alt="Photographie personnelle 3">
+                <figcaption>Photographie d'un lac brumeux</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/20251014_132731.jpg" alt="Photographie personnelle 4">
+                <figcaption>Photographie de laurieur rose dans le Devoluy</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/20251015_112017.jpg" alt="Photographie personnelle 5">
+                <figcaption>Photographie d'une ferrari à Monaco</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/20260805_123257.jpg" alt="Photographie personnelle 6">
+                <figcaption>Photographie d'un papillon "tabac d'espagne" dans le Devoluy</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/5f3b0c42-657b-41cf-85ea-9afa2ba7d5fe.png" alt="Photographie personnelle 7">
+                <figcaption>Photographie d'une porsche à Monaco</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="images/9968565a-030b-439c-9dda-dccc1d3d1fd0.png" alt="Photographie personnelle 8">
+                <figcaption>Photographie de l'eclipse du 12 août 2026</figcaption>
+            </figure>
+        </div>
+    </section>
+
     <!-- Expériences -->
     <section id="experiences" class="section bg-alt">
         <h2 class="title">Expériences Professionnelles</h2>
@@ -173,11 +217,12 @@
                 </div>
             </div>
 
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Votre Nom" required>
-                <input type="email" placeholder="Votre Email" required>
-                <input type="text" placeholder="Sujet" required>
-                <textarea rows="5" placeholder="Votre Message" required></textarea>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvkolael" method="POST">
+                <input type="text" name="name" placeholder="Votre Nom" autocomplete="name" required>
+                <input type="email" name="email" placeholder="Votre Email" autocomplete="email" required>
+                <input type="text" name="subject" placeholder="Sujet" required>
+                <textarea name="message" rows="5" placeholder="Votre Message" required></textarea>
+                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
                 <button type="submit" class="btn primary">Envoyer le message</button>
             </form>
         </div>

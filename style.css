@@ -190,6 +190,46 @@ body {
     gap: 2rem;
 }
 
+.section-intro {
+    max-width: 700px;
+    margin: -1rem auto 2.5rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.photography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.photo-card {
+    overflow: hidden;
+    background: var(--bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.photo-card figcaption {
+    min-height: 4.5rem;
+    padding: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 .project-card {
     background-color: var(--bg-alt-color);
     padding: 2rem;
